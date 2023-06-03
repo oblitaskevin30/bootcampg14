@@ -16,3 +16,13 @@ git push -u origin main
 git remote remove origin
 git checkout -b <nombre de la rama>
 
+git checkout main # me llevaria a main
+
+git merge  # une dos ramas
+
+tres pasos :
+    GIT ADD .
+    GIT ADD -A
+    GIT COMMIT -M "MI MENSAJE O TITULO"
+    GIT PUSH
+
