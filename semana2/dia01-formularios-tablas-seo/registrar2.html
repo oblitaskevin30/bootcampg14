@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .nombreCompleto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nombreCompleto label{
+            width: 50%;
+        }
+        .names{
+            margin-right:10px ;
+        }
+        .apellidos{
+            margin-left: 10px;
+        }
+        .registro{
+            margin-top: 10px;
+        }
+        .usuarioimg{
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form action="">
+            <img class="usuarioimg" src="stitch.png" alt="ImagenPersonal">
+            <h1>Crear una cuenta</h1>
+            <h5>Ingresa la siguiente información para registrarte. </h5>
+            <div class="nombreCompleto">
+                <label for="" class="names">
+                    Names
+                    <input type="text" placeholder="Victor">
+                </label>
+                <label for="" class="Apellidos">
+                    Apellidos
+                    <input type="text" placeholder="Villazón">
+                </label>
+            </div>
+            <label for="" class="edad">
+                Edad
+                <input type="number" placeholder="Ej. 19">
+            </label>
+            <label for="" class="FechaNac">
+                Fecha de nacimiento
+                <input type="datetime-local">
+            </label>
+            <label for="" class="genero">
+                Género
+                <select name="genero" id="">
+                    <option value="">Selecciona tu Género</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="x">prefiero no decirlo</option>
+                </select>
+            </label>
+            <label for="" class="email">
+                email
+                <input type="email" placeholder="Email: Ek. user@gmail.com">
+            </label>
+            <label for="" class="direccion">
+                Dirección
+                <input type="text" placeholder="Dirección">
+                <input type="text" placeholder="Dirección linea 2">
+            </label>
+            <label for="" class="telefono">
+                Teléfono
+                <input type="tel" placeholder="Número de teléfono">
+            </label>
+            <label for="" class="codigoPostal">
+                Código postal
+                <input type="number" placeholder="Ej: 14001">
+            </label>
+            <label for="" class="firma">
+                Subir firma
+                <input type="file" value="Choose File">
+            </label>
+            <label for="" class="terminos">
+                <input type="checkbox"> Acepto terminos, condiciones y políticas
+            </label>
+            
+            <input class="registro" type="submit" value="Registrarse">
+        </form>
+    </main>
+</body>
+</html>

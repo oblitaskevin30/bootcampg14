@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Formularios + imputs + validaciones</h1>
+        <form action="">
+            <h2>Inputs</h2>
+            <label for="text1">
+                Input tipo Texto
+                <input type="text" placeholder="Ingresa algun texto" id="text1">
+            </label>
+            <label for="">
+                input (desactivados)
+                <input type="text"  placeholder="Ingresa algun texto" disabled>
+            </label>
+            <label for="">
+                Input (solo lectura)
+                <input type="text" placeholder="solo lectura" readonly>
+            </label>
+            <label for="">
+                Input tipo Number
+                <input type="number" placeholder="edad ej. 18">
+            </label>
+            <label for="">
+                Input tipo email
+                <input type="email" placeholder="Correo Ej. soykevin@gmail.com">
+            </label>
+            <label for="">
+                Input tipo range (Edad)
+                <input type="range">
+            </label>
+            <label for="">
+                input tipo tel
+                <input type="tel"   placeholder="(51) 999999999">
+            </label>
+            <label for="">
+                input tipo url
+                <input type="url"   placeholder="sitio web">
+            </label>
+            <label for="">
+                Input tipo password
+                <input type="password" placeholder="Password">
+            </label>
+            <label for="">
+                Input tipo color
+                <input type="color">
+            </label>
+            <label for="">
+                Input tipo search
+                <input type="search">
+            </label>
+            <label for="correo">
+                indica tu correo
+                <input type="mail" id="correo" >
+            </label>
+            <label for="texto">
+                introduce un texo
+                <input type="file"  id="texto">
+            </label>
+            <label for="">
+                seleccione archivo
+                <input type="file"  multiple>
+            </label>
+            <label for="">
+                input seleccionar solo imagenes 
+                <input type="file" accept="image/*">
+            </label>
+            <label for="">
+                input tipo fiel (seleccionando solamente jpg)
+                <input type="file" accept=".jpg, .jpeg">
+            </label>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+
+        <form action="">
+            <h2>Input tipo fecha</h2>
+
+            <label for="">
+                Input tipo datetime-local (fecha y hora)
+                <input type="datetime-local" name="fecha">
+            </label>
+            <label for="">
+                Input tipo datetime-local (fecha y hora)
+                <input type="date" name="dia">
+            </label>
+            <label for="">
+                Input tipo datetime-local (fecha y hora)
+                <input type="week" name="semana">
+            </label>
+            <label for="">
+                Input tipo datetime-local (fecha y hora)
+                <input type="month" name="mes">
+            </label>
+
+            <input type="submit" value="guardar">
+        </form>
+        
+    </main>
+    
+</body>
+</html>
