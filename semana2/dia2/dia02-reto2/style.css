@@ -84,6 +84,8 @@ section li ul span{
 .inputEmail{
     margin-top: 1rem;
     border-radius: 0.4rem;
+    border-width: 0.01px;
+    border-color: hsl(231, 7%, 60%);
     width: 96%;
     height: 2rem;
 }
