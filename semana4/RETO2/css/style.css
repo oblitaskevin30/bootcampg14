@@ -1,0 +1,9 @@
+/* IMPORTO LAS FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* IMPORTO LOS CSS  */
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./variables.css);
+
+

@@ -1,0 +1,69 @@
+/* header desktop */
+.header{
+    border : 1px solid red;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: (100%-3rem,450px); 
+    /* margin : 0 auto; */
+    
+}
+
+.header ul{
+    margin-right:5rem ;
+    border : 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+
+.header-logo{
+    border : 1px solid red;
+    margin-left: 5rem;
+    
+    
+}
+
+.header input{
+    display: none;
+}
+
+.header label {
+    display: none;
+}
+
+
+@media (max-width : 768px){
+    .header{
+        padding-top: 1rem;
+        
+        
+    }
+
+    .header ul{
+        display: none;
+    }
+
+    .header-logo{
+        border : 1px solid red;
+        display: block;
+        margin-left: 1rem;
+        width: 7rem;
+        height: 2.5rem;
+
+    }
+
+    .header label{
+        display: block;
+        pointer-events: painted;
+    }
+
+    .header label img{
+        
+        border : 1px solid red;
+        width: 5rem;
+        height: 2.5rem
+    }
+}

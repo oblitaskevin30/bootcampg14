@@ -1,0 +1,28 @@
+:root html[ data-theme = 'light']{
+
+    color-scheme: light;
+
+    /* FONTS */
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* COLORS */
+
+    --primary-very-dark-blue: hsl(243, 87%, 12%);
+    --primary-desaturated-blue:hsl(238, 22%, 44%);
+    
+    --primary-dark-blue-footer: hsl(216, 53%, 9%);
+    --primary-dark-blue-testimonials: hsl(219, 30%, 18%);
+    
+    --accent-bright-blue:hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+
+    --accent-light-red: hsl(0, 100%, 63%);
+
+    --neutral-light-grayish-blue: hsl(240, 75%, 98%);
+    --neutral-light-gray : hsl(0, 0%, 75%);
+
+}
