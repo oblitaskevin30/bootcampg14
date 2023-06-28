@@ -15,9 +15,12 @@
 
 @media (max-width : 768px) {
     .section1{
+        height: 130vh;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
+         /* border: 1px solid red; */
     }
 }
 
@@ -30,12 +33,26 @@
     gap: 1rem;
 }
 
+@media (max-width : 768px) {
+    .section1-description{
+        
+        text-align: center;
+    }
+}
+
 .section1-description h2{
     font-family: var(--font-primary);
     font-weight: var(--font-weight-bold);
     color: var(--primary-very-dark-blue);
     font-size: 2.4rem;
     text-align: left;
+}
+
+@media (max-width : 768px) {
+    .section1-description h2{
+        text-align: center;
+        font-size: 2rem;
+    }
 }
 
 .section1-description p{
@@ -49,22 +66,30 @@
 }
 
 @media (max-width : 768px) {
+    .section1-description p{
+        
+        text-align: center;
+    }
+}
+
+/* @media (max-width : 768px) {
     .section1-img{
         
         width: 60%;
     }
-}
+} */
 
 /* imagen */
 .section1-img{
-    width: 40rem;
+    width: min(50%,1440px);
+    /* width: 40rem; */
     /* border: 1px solid red; */
 }
 
 @media (max-width : 768px) {
     .section1-img{
-        
-        width: 60%;
+        padding-top: 2rem;
+        width: 80%;
     }
 }
 
@@ -72,17 +97,26 @@
 .section1-getStarted{
     display: flex;
     flex-direction: row;
+    
     gap: 1rem;
 }
 @media (max-width : 768px) {
     .section1-getStarted{
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .section1-getStarted label{
     width: min(60%);
     height: 3rem;
+}
+@media (max-width : 768px) {
+    .section1-getStarted label{
+        width: 100%;
+    }
 }
 .section1-getStarted label input{
     width: 100%;
