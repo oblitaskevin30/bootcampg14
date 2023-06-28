@@ -1,0 +1,122 @@
+.section2{
+    
+    height: 90vh;
+    /* margin-top: 1rem; */
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: min(90%,1440px);
+}
+.section2-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+/* imagen */
+.section2-img{
+    width: 40rem;
+    /* border: 1px solid red; */
+}
+
+@media (max-width : 768px) {
+    .section2-img{
+        
+        width: 60%;
+    }
+}
+
+.section2-description{
+    height: 70%;
+    width: 100%;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    gap: 1rem;
+}
+
+
+.section2-description h2{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-very-dark-blue);
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+
+.section2-description p{
+    
+    width: 35rem;
+    color: var(--primary-desaturated-blue);
+    font-family: var(--font-primary);
+    /* font-weight: 700; */
+    font-size: 1rem;
+    
+}
+
+.section2-description a{
+    text-decoration: underline;
+    color: var(--accent-moderate-cyan);
+}
+
+
+.Testimonial-card{
+    position: relative;
+    
+    background-color: var(--neutral-light-grayish-blue);
+    box-shadow: 5px 3px 3px var(--neutral-light-gray);
+    width: 25rem;
+    height: 15rem;
+    /* border: 1px solid   red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.card{
+    margin-left: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    /* border: 1px solid   red; */
+}
+
+
+.card img{
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.improved {
+    margin-left: 2rem;
+    color: var(--primary-desaturated-blue);
+    width: 20rem !important;
+}
+
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.card p {
+    width: 20rem;
+    font-size: 0.7rem;
+}
+
+.quote{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}

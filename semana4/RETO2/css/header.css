@@ -1,17 +1,19 @@
 /* header desktop */
 .header{
-    border : 1px solid red;
+    /* border : 1px solid red; */
     padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
-    width: (100%-3rem,450px); 
-    /* margin : 0 auto; */
+    width: min(90%,1440px); 
+    margin : 0 auto;
     
 }
 
 .header ul{
-    margin-right:5rem ;
-    border : 1px solid red;
+    /* margin-right:5rem ; */
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    /* border : 1px solid red; */
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -20,8 +22,8 @@
 }
 
 .header-logo{
-    border : 1px solid red;
-    margin-left: 5rem;
+    /* border : 1px solid red; */
+    /* margin-left: 5rem; */
     
     
 }
@@ -47,7 +49,7 @@
     }
 
     .header-logo{
-        border : 1px solid red;
+        /* border : 1px solid red; */
         display: block;
         margin-left: 1rem;
         width: 7rem;
@@ -62,7 +64,7 @@
 
     .header label img{
         
-        border : 1px solid red;
+        /* border : 1px solid red; */
         width: 5rem;
         height: 2.5rem
     }

@@ -1,0 +1,105 @@
+
+.section1{
+    height: 90vh;
+    /* margin-top: 1rem; */
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: min(90%,1440px);
+
+    background: url(../images/bg-curve-desktop.svg) no-repeat bottom;
+    background-size: over;
+}
+
+@media (max-width : 768px) {
+    .section1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.section1-description{
+    width: 50%;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1rem;
+}
+
+.section1-description h2{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-very-dark-blue);
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+.section1-description p{
+    word-spacing: 1rem;
+    
+    color: var(--primary-desaturated-blue);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+
+@media (max-width : 768px) {
+    .section1-img{
+        
+        width: 60%;
+    }
+}
+
+/* imagen */
+.section1-img{
+    width: 40rem;
+    /* border: 1px solid red; */
+}
+
+@media (max-width : 768px) {
+    .section1-img{
+        
+        width: 60%;
+    }
+}
+
+
+.section1-getStarted{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+@media (max-width : 768px) {
+    .section1-getStarted{
+        flex-direction: column;
+    }
+}
+
+.section1-getStarted label{
+    width: min(60%);
+    height: 3rem;
+}
+.section1-getStarted label input{
+    width: 100%;
+    height: 100%;
+}
+
+.section1-submit{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    border-radius: 0.3rem;
+    border: none;
+    line-height: 1.5 ;
+    min-width: 220px;
+    color: var(--neutral-light-grayish-blue);
+    background: var( --accent-bright-blue);
+}
+
+@media (max-width : 768px) {
+    
+}

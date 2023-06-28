@@ -5,5 +5,11 @@
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./variables.css);
+@import url(./section1.css);
+@import url(./footer.css);
+@import url(./section2.css);
+@import url(./section3.css);
 
-
+html{
+    font-size: var(--font-primary);
+}
