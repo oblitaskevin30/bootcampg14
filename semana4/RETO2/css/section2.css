@@ -6,12 +6,37 @@
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    gap: 3rem;
-    width: min(90%,1440px);
+    
+    width: 100%;
+    background-color: var(--neutral-light-grayish-blue);
 }
 
 @media (max-width : 768px) {
     .section2{
+        
+        height: 160vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+         /* border: 1px solid red; */
+    }
+}
+
+.section2-WRAPPERMAX{
+    height: 90vh;
+    /* margin-top: 1rem; */
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: min(90%,1440px);
+    background-color: var(--neutral-light-grayish-blue);
+}
+
+@media (max-width : 768px) {
+    .section2-WRAPPERMAX{
         height: 140vh;
         display: flex;
         flex-direction: column-reverse;
@@ -20,11 +45,15 @@
          /* border: 1px solid red; */
     }
 }
+
+
+
+
 .section2-wrapper{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 100%;
+    width: min(90%,1440px);
     /* border: 1px solid red; */
 }
 
@@ -39,7 +68,7 @@
 @media (max-width : 768px) {
     .section2-img{
         
-        width: 60%;
+        width: 90%;
     }
 }
 
@@ -62,7 +91,12 @@
     font-size: 2.4rem;
     text-align: left;
 }
-
+@media (max-width : 768px) {
+    .section2-description h2{
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+}
 
 .section2-description p{
     
@@ -89,8 +123,8 @@
 
 .Testimonial-card{
     position: relative;
+    background-color: white;
     
-    background-color: var(--neutral-light-grayish-blue);
     box-shadow: 5px 3px 3px var(--neutral-light-gray);
     width: 25rem;
     height: 15rem;
@@ -104,8 +138,8 @@
 @media (max-width : 768px) {
     .Testimonial-card{
         justify-content: center;
-        height: 22rem;
-        width: 20rem;
+        height: 18rem;
+        width: 19rem;
     }
 }
 
@@ -135,7 +169,7 @@
 
 @media (max-width : 768px) {
     .improved{
-        
+        font-size: 0.9rem;
         width: 16rem;
     }
 }
@@ -161,4 +195,12 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
+}
+
+@media (max-width : 768px) {
+    .quote{
+        top: 1rem;
+        left: 2rem;
+        
+    }
 }
