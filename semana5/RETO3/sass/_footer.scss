@@ -1,0 +1,25 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    
+    background-color: rgb(20, 18, 18);
+
+    @media (min-width:768px) {
+        height: 30vh;
+        padding-top: 0;
+        
+        
+    }
+
+
+    h1{
+        color: white;
+        font-size: 1rem;
+        color: rgb(255, 255, 0);
+        font-weight: 700;
+    }
+}

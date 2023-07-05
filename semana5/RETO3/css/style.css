@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(to right top, #020202, #3c9bc7);
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  padding: 0.5rem 0;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar-wrapper {
+  height: 4rem;
+  max-width: 1440px;
+  min-width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-wrapper {
+    min-width: 90%;
+  }
+}
+.navbar picture {
+  width: 3rem;
+}
+.navbar picture img {
+  width: 100%;
+  height: 100%;
+}
+.navbar .navbar-links {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-links {
+    display: flex;
+    padding-left: 5rem;
+  }
+  .navbar .navbar-links a {
+    color: white;
+    position: relative;
+  }
+  .navbar .navbar-links a::after {
+    position: absolute;
+    background-color: rgb(211, 211, 11);
+    content: "";
+    width: 100%;
+    color: rgb(211, 211, 11);
+    height: 3.5px;
+    left: 0rem;
+    top: 120%;
+    opacity: 0;
+  }
+  .navbar .navbar-links a:hover::after, .navbar .navbar-links a:hover {
+    color: rgb(211, 211, 11);
+    opacity: 1;
+    transition: 0.7s;
+  }
+}
+.navbar .navbar-redes {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.navbar .navbar-redes a {
+  width: 2rem;
+  height: 2rem;
+}
+.navbar .navbar-redes a img {
+  width: 100%;
+  height: 100%;
+}
+.navbar .navbar-redes a img:hover {
+  content: "";
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1rem 0.5rem rgba(255, 255, 255, 0.5);
+}
+
+.navbar label {
+  width: 2rem;
+  height: 2rem;
+}
+.navbar label img {
+  width: 100%;
+  height: 100%;
+}
+.navbar label img:hover {
+  transition: 0.2s;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1rem 0.5rem rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 768px) {
+  .navbar label {
+    display: none;
+  }
+}
+
+.navbar input {
+  display: none;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  padding-top: 4rem;
+}
+.section1 .section1-wrapper {
+  min-width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(12, 8, 240, 0.1));
+  margin-top: 0.5rem;
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.section1 .section1-wrapper .section1-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.section1 .section1-wrapper .section1-info h2 {
+  color: white;
+  font-size: 1rem;
+}
+.section1 .section1-wrapper .section1-info h2 span {
+  position: relative;
+  color: rgb(211, 211, 11);
+}
+.section1 .section1-wrapper .section1-info h2 span::before {
+  content: "-------------------";
+  width: 100%;
+  left: 0;
+  top: 60%;
+  height: 2px;
+  position: absolute;
+}
+.section1 .section1-wrapper .section1-info h1 {
+  color: white;
+}
+.section1 .section1-wrapper .section1-info p {
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+.section1 .section1-wrapper picture {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 0.2rem solid rgb(221, 206, 206);
+}
+.section1 .section1-wrapper picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.section1 .section1-wrapper .section1-img-tecnologias {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 0.4rem;
+}
+.section1 .section1-wrapper .section1-img-tecnologias img {
+  height: 3rem;
+  width: 4rem;
+}
+
+.wrapper-all {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background-globo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+:root {
+  /* color-scheme: light; */
+  /* FONTS */
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --font-size: 16px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  /* COLORS */
+  --hover-color: rgb(211, 211, 11);
+  --primary-very-dark-blue: hsl(243, 87%, 12%);
+  --primary-desaturated-blue:hsl(238, 22%, 44%);
+  --accent-bright-blue:hsl(224, 93%, 58%);
+  --accent-moderate-cyan: hsl(170, 45%, 43%);
+  --neutral-light-grayish-blue: hsl(240, 75%, 98%);
+  --neutral-light-gray: hsl(0, 0%, 75%);
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-primary);
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+.section2 .section2-wrapper {
+  padding: 10rem 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(12, 8, 240, 0.1));
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .section2 .section2-wrapper {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+.section2 .section2-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.section2 .section2-info h2 {
+  font-size: 1rem;
+  color: rgb(211, 211, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  height: 1rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+.section2 .section2-info h1 {
+  color: white;
+  width: 95%;
+  text-align: center;
+}
+.section2 .section2-info p {
+  text-align: center;
+  width: 90%;
+}
+.section2 .section2-info h3 {
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+.section2 .section2-info h3 a {
+  color: rgb(211, 211, 11);
+  font-weight: bolder;
+}
+@media (min-width: 768px) {
+  .section2 .section2-info {
+    width: 40%;
+  }
+  .section2 .section2-info h1, .section2 .section2-info h3, .section2 .section2-info p {
+    width: 90%;
+    text-align: start;
+  }
+  .section2 .section2-info p {
+    color: rgb(226, 222, 214);
+  }
+  .section2 .section2-info h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    height: 1rem;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 0px 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  }
+}
+.section2 .section2-piramide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.8rem;
+}
+.section2 .section2-piramide div img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+@media (min-width: 768px) {
+  .section2 .section2-piramide div img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200vh;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .section3 {
+    height: 100vh;
+  }
+}
+.section3 .section3-wrapper {
+  padding-top: 15rem;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(12, 8, 240, 0.1));
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .section3 .section3-wrapper {
+    padding-top: 0;
+  }
+}
+.section3 .section3-wrapper .titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  gap: 0.8rem;
+}
+.section3 .section3-wrapper .titulos h2 {
+  font-size: 1rem;
+  color: rgb(211, 211, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  height: 1rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+.section3 .section3-wrapper .titulos h1 {
+  font-size: 1.5rem;
+}
+.section3 .section3-wrapper .titulos .seleccion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .section3 .section3-wrapper .titulos .seleccion {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.section3 .section3-wrapper .titulos .seleccion h3 {
+  position: relative;
+}
+.section3 .section3-wrapper .titulos .seleccion h3::after {
+  position: absolute;
+  background-color: rgb(211, 211, 11);
+  content: "";
+  width: 100%;
+  color: rgb(211, 211, 11);
+  height: 3.5px;
+  left: 0rem;
+  top: 120%;
+  opacity: 0;
+}
+.section3 .section3-wrapper .titulos .seleccion h3:hover::after, .section3 .section3-wrapper .titulos .seleccion h3:hover {
+  color: rgb(211, 211, 11);
+  opacity: 1;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.section3 .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section3 .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.section3 .grid a {
+  width: 17rem;
+  height: 10rem;
+}
+.section3 .grid a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.section3 .grid a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  position: relative;
+  background-color: rgb(20, 18, 18);
+}
+@media (min-width: 768px) {
+  footer {
+    height: 30vh;
+    padding-top: 0;
+  }
+}
+footer h1 {
+  color: white;
+  font-size: 1rem;
+  color: rgb(255, 255, 0);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
