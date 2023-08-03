@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li :checked + span {
+            
+            text-decoration: line-through;
+            color: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <main class="task">
+        <h1>Listado de tareas</h1>
+        <div class="task_wrapper">
+            <input type="text"
+            class="task_input"
+            placeholder="Añade una tarea nueva">
+            <button class="task_add">Añadir tarea</button>
+        </div>
+        <ul class="task_list">
+
+        </ul>
+        
+    </main>
+<script src="./main.js"></script>
+</body>
+</html>

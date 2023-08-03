@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <div class="keycode"> KEYCODE</div>
+        <div class="LETRA">LETRA</div>
+    </div>
+
+    <script>
+
+        document.addEventListener('keydown', function(event){
+            const  keyCode = document.querySelector('.keycode');
+            const letra = document.querySelector('.LETRA');
+            console.log(event.key); //letra
+            console.log(event.keyCode); //codigo ascii
+            keyCode.textContent = event.keyCode
+            letra.textContent = event.key
+        })
+        
+
+    </script>
+</body>
+</html>

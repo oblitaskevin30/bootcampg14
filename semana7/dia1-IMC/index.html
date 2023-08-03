@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col 5">
+                <h1>Indice de grasa corporal</h1>
+                <div>
+                    <label for="" class="form-label">
+                        Peso(Kg)
+                        <input type="number"
+                        id="peso"
+                        placeholder="Ej. 50"
+                        required
+                        min="0"
+                        max="500"
+                        class="form-control">
+                    </label >
+
+                    <label for="" class="form-label">
+                        Altura(CM)
+                        <input type="number"
+                        id="altura"
+                        placeholder="ejem. 170"
+                        required
+                        min="0"
+                        max="500"
+                        class="form-control">
+                    </label>
+
+                    <button id="calcular"> calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
